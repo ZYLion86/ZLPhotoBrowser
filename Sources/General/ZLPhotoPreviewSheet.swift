@@ -194,7 +194,7 @@ public class ZLPhotoPreviewSheet: UIView {
             btn.backgroundColor = .previewBtnBgColor
             btn.setTitleColor(.previewBtnTitleColor, for: .normal)
             btn.setTitle(title, for: .normal)
-            btn.titleLabel?.font = getFont(17)
+            btn.titleLabel?.font = getFont(14)
             return btn
         }
         
