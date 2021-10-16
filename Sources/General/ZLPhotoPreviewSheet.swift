@@ -165,14 +165,14 @@ public class ZLPhotoPreviewSheet: UIView {
         self.baseViewHeight = bh
         
         self.baseView = UIView()
-        self.baseView.backgroundColor = zlRGB(230, 230, 230)
+        self.baseView.backgroundColor = .previewBtnBgColor
         self.addSubview(self.baseView)
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumInteritemSpacing = 3
         layout.minimumLineSpacing = 3
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 0, right: 5)
         
         self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         self.collectionView.backgroundColor = .previewBtnBgColor
