@@ -651,6 +651,8 @@ public class ZLPhotoThemeColorDeploy: NSObject {
     /// Preview selection mode, cancel button title color when the selection amount is superior than 0.
     @objc public var previewBtnHighlightTitleColor = zlRGB(80, 169, 56)
     
+    @objc public var previewBtnTitleFont = UIFont.systemFont(ofSize: 16)
+    
     /// A color for navigation bar spinner.
     @objc public var navBarColor = zlRGB(160, 160, 160).withAlphaComponent(0.65)
     
