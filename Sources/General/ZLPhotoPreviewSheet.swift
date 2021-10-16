@@ -165,7 +165,7 @@ public class ZLPhotoPreviewSheet: UIView {
         self.baseViewHeight = bh
         
         self.baseView = UIView()
-        self.baseView.backgroundColor = .clear
+        self.baseView.backgroundColor = .previewBgColor
         self.addSubview(self.baseView)
         
         let layout = UICollectionViewFlowLayout()
