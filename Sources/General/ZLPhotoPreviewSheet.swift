@@ -165,7 +165,7 @@ public class ZLPhotoPreviewSheet: UIView {
         self.baseViewHeight = bh
         
         self.baseView = UIView()
-        self.baseView.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
+        self.baseView.backgroundColor = .previewBgColor
         self.addSubview(self.baseView)
         
         let layout = UICollectionViewFlowLayout()
@@ -426,7 +426,7 @@ public class ZLPhotoPreviewSheet: UIView {
         self.showThumbnailViewController()
     }
     
-    @objc func cancelBtnClick() {
+    @objc public func cancelBtnClick() {
         guard !self.arrSelectedModels.isEmpty else {
             self.hide {
                 self.cancelBlock?()
