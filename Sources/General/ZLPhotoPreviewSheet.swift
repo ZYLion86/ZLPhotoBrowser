@@ -65,7 +65,7 @@ public class ZLPhotoPreviewSheet: UIView {
     
     private var baseViewHeight: CGFloat = 0
     
-    private var isSelectOriginal = false
+    private var isSelectOriginal = true
     
     private var panBeginPoint: CGPoint = .zero
     
