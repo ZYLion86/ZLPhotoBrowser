@@ -626,7 +626,7 @@ public class ZLPhotoPreviewSheet: UIView {
         let nav = self.getImageNav(rootViewController: vc)
         vc.backBlock = { [weak self, weak nav] in
             guard let `self` = self else { return }
-            self.isSelectOriginal = nav?.isSelectedOriginal ?? false
+            self.isSelectOriginal = nav?.isSelectedOriginal ?? true
             self.arrSelectedModels.removeAll()
             self.arrSelectedModels.append(contentsOf: nav?.arrSelectedModels ?? [])
             markSelected(source: &self.arrDataSources, selected: &self.arrSelectedModels)
@@ -711,7 +711,7 @@ public class ZLPhotoPreviewSheet: UIView {
         let nav = ZLImageNavController(rootViewController: rootViewController)
         nav.modalPresentationStyle = .fullScreen
         nav.selectImageBlock = { [weak self, weak nav] in
-            self?.isSelectOriginal = nav?.isSelectedOriginal ?? false
+            self?.isSelectOriginal = nav?.isSelectedOriginal ?? true
             self?.arrSelectedModels.removeAll()
             self?.arrSelectedModels.append(contentsOf: nav?.arrSelectedModels ?? [])
             self?.requestSelectPhoto(viewController: nav)
